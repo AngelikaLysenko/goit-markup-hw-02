@@ -1,0 +1,154 @@
+:root{
+  --primary-text-color: #212121;
+  --accent-color: #2196f3;
+  --paragraf-text-color: #757575;
+  --main-back-color: #ffffff;
+  --fon-back-hero: #2f303a;
+  --footer-fon: #2f303a;
+}
+
+.body {
+  background: var(--main-back-color) F;
+  color: var(--primary-text-color);
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.page {
+  background-color: var(--main-back-color);
+}
+.page-header {
+  background-color: var(--main-back-color);
+  color: var(--primary-text-color);
+}
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+/*site-nav*/
+
+.link-current {
+  color: var(--primary-text-color);
+  font-family: Roboto;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.link-current:hover,
+.link-current:focus {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+.tel-link {
+  color: var(--paragraf-text-color);
+  text-decoration: none;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+/*Hero*/
+.hero-title {
+  color: var(--main-back-color);
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.5;
+}
+.hero {
+  background: var(--fon-back-hero);
+}
+/*button*/
+
+.button {
+  color: var(--main-back-color);
+  background-color: var(--accent-color);
+}
+
+.button.primary {
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.section-title {
+  color: var(--primary-text-color);
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.section-title-main {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  color: var(--primary-text-color);
+}
+
+.title-description {
+  color: var(--paragraf-text-color);
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.section-team-title {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--primary-text-color);
+}
+
+.team-title-description {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--paragraf-text-color);
+}
+
+/*Feature*/
+
+.feature-list .title {
+  color: var(--primary-text-color);
+}
+
+.mail-link:hover,
+.test-link:focus {
+  color: var(--accent-color);
+}
+
+/*footer*/
+.footer {
+  background: var(--footer-fon);
+}
+
+.address {
+  color: var(--main-back-color);
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+.tel-link-footer {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
