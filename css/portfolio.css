@@ -10,6 +10,7 @@
 .site-nav.list,
 .tel-link {
   list-style: none;
+  cursor:pointer
 }
 
 .body {
@@ -46,6 +47,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  text-decoration: none;
 }
 .link-current:hover,
 .link-current:focus {
@@ -71,6 +73,8 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.9;
+  text-decoration: none;
+ cursor:pointer
 }
 
 .button.primary {
@@ -81,6 +85,8 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 1.9;
+  text-decoration: none;
+  cursor:pointer
 }
 
 .section-title {
@@ -107,8 +113,8 @@
   color: var(--primary-text-color);
 }
 
-.mail-link:hover,
-.test-link:focus {
+.contact-link-footer:hover,
+.contact-link-footer:focus {
   color: var(--accent-color);
 }
 
@@ -118,7 +124,7 @@
 }
 
 .address,
-.tel-link-footer {
+.contact-link-footer {
   color: var(--main-back-color);
   font-family: Roboto;
   font-style: normal;
@@ -127,7 +133,7 @@
   line-height: 1.7;
 }
 
-.tel-link-footer {
+.contact-link-footer {
   color: var(--paragraf-text-color);
   font-family: Roboto;
   font-style: normal;

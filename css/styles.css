@@ -39,19 +39,28 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  cursor:pointer
 }
 .link-current:hover,
 .link-current:focus {
   color: var(--accent-color);
   text-decoration: none;
 }
-.tel-link {
+
+.contact-link {
   color: var(--paragraf-text-color);
   text-decoration: none;
   font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  cursor:pointer
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
+  text-decoration: none;
 }
 
 /*Hero*/
@@ -144,11 +153,21 @@
   font-size: 14px;
   line-height: 24px;
 }
-.tel-link-footer {
+.contact-link-footer {
   font-family: Roboto;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+}
+
+.contact-link-footer:hover,
+.contact-link-footer:focus {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.contact-link {
+  color: var(--paragraf-text-color);
 }
