@@ -22,7 +22,25 @@
   color: var(--primary-text-color);
 }
 .logo {
-  color: var(--accent-color);
+  color: var(--primary-text-color);
+  
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.logo-web {
+   color: var(--accent-color);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.logo-studio {
+  color: var(--main-back-color);
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -43,6 +61,7 @@
 }
 .link-current:hover,
 .link-current:focus {
+  background-color: var(--primary-text-color);
   color: var(--accent-color);
   text-decoration: none;
 }
@@ -59,6 +78,7 @@
 
 .contact-link:hover,
 .contact-link:focus {
+  background-color: var(--primary-text-colo);
   color: var(--accent-color);
   text-decoration: none;
 }
@@ -70,6 +90,8 @@
   font-weight: 900;
   font-size: 44px;
   line-height: 1.5;
+  text-transform: uppercase;
+  text-align: center;
 }
 .hero {
   background: var(--fon-back-hero);
@@ -88,6 +110,7 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 1.9;
+  cursor:pointer
 }
 
 .section-title {
@@ -121,6 +144,8 @@
   line-height: 1.18;
   color: var(--primary-text-color);
 }
+.section-title-main {
+   text-align: center;}
 
 .team-title-description {
   font-family: Roboto;
@@ -164,6 +189,7 @@
 
 .contact-link-footer:hover,
 .contact-link-footer:focus {
+  background-color: var(--main-back-color);
   color: var(--accent-color);
   text-decoration: none;
 }
