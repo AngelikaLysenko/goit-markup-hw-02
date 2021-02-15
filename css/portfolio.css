@@ -5,32 +5,89 @@
   --main-back-color: #ffffff;
   --fon-back-hero: #2f303a;
   --footer-fon: #2f303a;
+  --nav-list-gap: 30px;
 }
 
-.site-nav.list,
-.tel-link {
+body {
+  background: var(--main-back-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-style: 400;
+  margin: 0 auto;
+  width: 1200px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+/* COMMON */
+
+ul {
   list-style: none;
-  cursor:pointer
+  padding: 0;
+  margin: 0;
 }
 
-.body {
-  background: var(--main-back-color) F;
-  color: var(--primary-text-color);
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  text-decoration: none;
+h1,
+h2,
+h3,
+p {
+  margin: 0;
 }
 
-.page {
-  background-color: var(--main-back-color);
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
+a {
   text-decoration: none;
 }
-.page-header {
-  background-color: var(--main-back-color);
+/*--Шапка сайта--*/
+
+.header-container {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  margin: 0 -200px;
+  max-width: 1600px;
+  min-height: 80px;
+}
+
+.header-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-nav {
+  overflow: hidden;
+  margin-left: 68px;
+}
+
+.site-link-current,
+.contact-list {
+  display: flex;
+}
+
+.site-link-current li {
+  margin: 0 25px;
+}
+
+.contact-list li {
+  margin-left: 50px;
+}
+
+.logo-studio {
   color: var(--primary-text-color);
 }
+
+.logo-studio-header {
+  color: var(--primary-text-color);
+}
+
 .logo {
   color: var(--accent-color);
   font-family: Raleway;
@@ -38,9 +95,17 @@
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  margin-right: 43px;
+  margin-left: 215px;
 }
 
-/*site-nav*/
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* MAIN NAV */
 
 .link-current {
   color: var(--primary-text-color);
@@ -48,22 +113,33 @@
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
+  margin-left: 50px;
 }
 
 .link-current:hover,
 .link-current:focus {
-  background-color: var(--primary-text-color);
   color: var(--accent-color);
+  background-color: var(--main-back-color);
   text-decoration: none;
+}
+
+.contact-link {
+  color: var(--paragraf-text-color);
+  line-height: 1.14;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
 }
 
 .tel-link {
   color: var(--paragraf-text-color);
   text-decoration: none;
-  font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  margin-left: 50px;
 }
 
 .tel-link:hover,
@@ -73,30 +149,59 @@
   text-decoration: none;
 }
 
+/*Наши работы*/
+
+.container-portfolio {
+  color: var(--main-back-color);
+  text-align: center;
+  justify-content: center;
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 94px;
+  margin: 0 auto;
+}
+
+.site-nav-list {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 30px;
+  padding-bottom: 56px;
+}
+
 /*button*/
+
+button {
+  border: 0px;
+}
 
 .button-secondary {
   color: var(--primary-text-color);
   background-color: var(--main-back-color);
   font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
+  font-style: 400;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
   text-decoration: none;
- cursor:pointer
+  cursor: pointer;
+  display: flex;
+  margin-left: 8px;
 }
 
 .button.primary {
-color: var(--primary-text-color);
+  color: var(--primary-text-color);
   background-color: var(--main-back-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-family: "Roboto", sans-serif;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
   text-decoration: none;
-  cursor:pointer
+  cursor: pointer;
+  display: flex;
 }
 
 .button.primary:hover,
@@ -112,57 +217,106 @@ color: var(--primary-text-color);
   color: var(--main-back-color);
   text-decoration: none;
 }
-.section-title {
-  color: var(--primary-text-color);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
+
+/* CARD SET */
+
+.card-set {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.card-set > .item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.card-heading {
+  font-weight: 700;
   font-size: 18px;
-  line-height: 0.5;
+  line-height: 2;
+  color: var(--primary-text-color);
+  margin-top: 20px;
+  margin-bottom: 4px;
 }
 
-.title-description {
+.card-content {
+  font-weight: 400;
+  line-height: 1.87;
   color: var(--paragraf-text-color);
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+}
+
+/*footer*/
+
+.footer {
+  background: var(--footer-fon);
+  margin: 0 -200px;
+  max-width: 1600px;
+  min-height: 252px;
+}
+
+.container-footer {
+  padding: 60px;
+  margin-left: 215px;
+}
+
+.contact-info {
+  margin-top: 9px;
+}
+
+.address {
+  font-family: Roboto;
+  color: var(--main-back-color);
+  line-height: 1.71;
   font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.9;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+.contact-link-footer {
+  font-family: Roboto;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.03em;
 }
 
-/*Feature*/
+.logo-footer {
+  color: var(--accent-color);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
 
-.feature-list .title {
-  color: var(--primary-text-color);
+.logo-studio-footer {
+  color: var(--main-back-color);
 }
 
 .contact-link-footer:hover,
 .contact-link-footer:focus {
   background-color: var(--main-back-color);
   color: var(--accent-color);
-}
-
-/*footer*/
-.footer {
-  background: var(--footer-fon);
-}
-
-.address,
-.contact-link-footer {
-  color: var(--main-back-color);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.7;
-}
-
-.contact-link-footer {
-  color: var(--paragraf-text-color);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: ;
   text-decoration: none;
+}
+
+.contact-link {
+  color: var(--paragraf-text-color);
 }
