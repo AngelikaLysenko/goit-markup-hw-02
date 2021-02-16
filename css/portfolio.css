@@ -182,8 +182,7 @@ button {
   color: var(--primary-text-color);
   background-color: var(--main-back-color);
   font-family: Roboto;
-  font-style: 400;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.9;
   text-decoration: none;
@@ -196,7 +195,7 @@ button {
   color: var(--primary-text-color);
   background-color: var(--main-back-color);
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.9;
   text-decoration: none;
