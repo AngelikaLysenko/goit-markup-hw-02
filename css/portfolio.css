@@ -282,6 +282,7 @@ img {
   color: var(--primary-text-color);
   margin-top: 20px;
   margin-bottom: 4px;
+  align-content: left;
 }
 
 .card-content {
@@ -291,6 +292,7 @@ img {
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 20px;
+  align-content: left;
 }
 
 /*footer*/
