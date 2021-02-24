@@ -59,7 +59,11 @@ a {
 /*Шапка сайта*/
 
 .main-container {
+<<<<<<< Updated upstream
   border-bottom: 1px solid var(--primary-text-color);
+=======
+  border-bottom: 1px solid var(--paragraf-text-color);
+>>>>>>> Stashed changes
 }
 
 .header-container {
@@ -90,6 +94,7 @@ a {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var (var(--primary-text-color));
+<<<<<<< Updated upstream
 }
 
 .site-link-current {
@@ -100,6 +105,18 @@ a {
   list-style: none;
 }
 
+=======
+}
+
+.site-link-current {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+}
+
+>>>>>>> Stashed changes
 .link-current {
   margin-left: 50px;
   font-family: Roboto;
@@ -318,7 +335,12 @@ img {
   padding-right: 24px;
   padding-bottom: 20px;
   text-align: left;
+<<<<<<< Updated upstream
   border: 1px solid var(--primary-text-color);
+=======
+  border-bottom: 1px solid var(--paragraf-text-color);
+  border-radius: 0px 0px 4px 4px;
+>>>>>>> Stashed changes
 }
 
 /*footer*/
