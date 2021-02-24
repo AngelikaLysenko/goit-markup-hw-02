@@ -59,11 +59,7 @@ a {
 /*Шапка сайта*/
 
 .main-container {
-<<<<<<< Updated upstream
   border-bottom: 1px solid var(--primary-text-color);
-=======
-  border-bottom: 1px solid var(--paragraf-text-color);
->>>>>>> Stashed changes
 }
 
 .header-container {
@@ -335,12 +331,9 @@ img {
   padding-right: 24px;
   padding-bottom: 20px;
   text-align: left;
-<<<<<<< Updated upstream
-  border: 1px solid var(--primary-text-color);
-=======
   border-bottom: 1px solid var(--paragraf-text-color);
   border-radius: 0px 0px 4px 4px;
->>>>>>> Stashed changes
+>
 }
 
 /*footer*/
