@@ -59,7 +59,7 @@ a {
 /*Шапка сайта*/
 
 .main-container {
-  border-bottom: 1px solid var(--primary-text-color);
+  border-bottom: 1px solid #ECECEC;
 }
 
 .header-container {
@@ -318,7 +318,7 @@ img {
   font-size: 18px;
   line-height: 2;
   color: var(--primary-text-color);
-  margin-top: 20px;
+  
   margin-bottom: 4px;
   text-align: left;
 }
@@ -330,8 +330,11 @@ img {
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 20px;
+  padding-top: 20px;
   text-align: left;
-  border-bottom: 1px solid var(--paragraf-text-color);
+  border-bottom: 1px solid #E5E5E5;;
+  border-left:1px solid #E5E5E5;;
+  border-right:1px solid#E5E5E5;;
   border-radius: 0px 0px 4px 4px;
 >
 }
